@@ -3,34 +3,6 @@ import requests
 from bs4 import BeautifulSoup as bs
 #import pandas as pd
 
-"""
-# Подключение к сайту
-url_template = "https://spb.postupi.online/specialnosti/bakalavr/"
-r = requests.get(url_template)
-print(r.status_code)
-soup = bs(r.text, 'html.parser')
-#print(r.text)
-
-# result_list['href'].append('https://www.work.ua'+name.a['href'])
-# База итогового результата
-#result_list = {'Направление': [], 'Идентификатор': [], 'Специальность': [], 'Проходной балл': [], 'Предметы ЕГЭ': [], }
-
-#specialty_by_number = soup.find_all('', class_= '')
-
-# Получение направления обучения [9:] и идентификатор [1:9]
-number = soup.find_all('p', class_= 'list__pre')
-for num in number:
-	str0 = num.get_text()
-	print('Направление --', str0[8:])
-	print('Идентификатор --', str0[0:8])
-
-# Получение специальности
-specialty = soup.find_all('h2', class_= 'list__h')
-for spe in specialty:
-	#result_list['Специальность'].append(spe.a.get_text())
-	print('Специальность --', spe.a.get_text())
-"""
-
 URLi = "https://spb.postupi.online/vuzi/?page_num=" #_blocks of universities
 universities = []
 try:
